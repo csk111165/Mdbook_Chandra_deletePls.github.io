@@ -1,7 +1,8 @@
 ## Python is a good programming language
 ### Code : hellow world
 
-> **Tip:** Use HackerRank for practice.
+> <i class="fas fa-lightbulb"></i> **Tip:** Use HackerRank for practice.
+
 
 
 ```py
