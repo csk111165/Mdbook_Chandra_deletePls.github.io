@@ -172,17 +172,6 @@
 <div style="break-before: page; page-break-before: always;"></div><h2 id="this-is-just-about-hello-world-in-cpp"><a class="header" href="#this-is-just-about-hello-world-in-cpp">This is just about hello world in CPP</a></h2>
 <p>Using this I just want to check if the code highlight is there or not
 <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&amp;logo=c%2B%2B&amp;logoColor=white" alt="C++" /></p>
-<blockquote>
-<p>:blush:</p>
-</blockquote>
-<blockquote>
-<p><strong>Note</strong>
-This is a note</p>
-</blockquote>
-<blockquote>
-<p>[!NOTE]
-This is a note</p>
-</blockquote>
 <div id="admonition-info" class="admonition info">
 <div class="admonition-title">
 <p>Info</p>
@@ -218,20 +207,18 @@ int main(){
 <p>Do you have any notes.(give 4 space above to show the line in the next line)<br />
 This can be collapsed.(give 4 space above to show the line in the next line)</p>
 </div>
-</details><div style="break-before: page; page-break-before: always;"></div><h2 id="this-is-just-about-hello-world-in-cpp-1"><a class="header" href="#this-is-just-about-hello-world-in-cpp-1">This is just about hello world in CPP</a></h2>
+</details>
+<div id="admonition-info-1" class="admonition info">
+<div class="admonition-title">
+<p>Info</p>
+<p><a class="admonition-anchor-link" href="cpp.html#admonition-info-1"></a></p>
+</div>
+<div>
+<p>Cpp is awesome!</p>
+</div>
+</div><div style="break-before: page; page-break-before: always;"></div><h2 id="this-is-just-about-hello-world-in-cpp-1"><a class="header" href="#this-is-just-about-hello-world-in-cpp-1">This is just about hello world in CPP</a></h2>
 <p>Using this I just want to check if the code highlight is there or not
 <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&amp;logo=c%2B%2B&amp;logoColor=white" alt="C++" /></p>
-<blockquote>
-<p>:blush:</p>
-</blockquote>
-<blockquote>
-<p><strong>Note</strong>
-This is a note</p>
-</blockquote>
-<blockquote>
-<p>[!NOTE]
-This is a note</p>
-</blockquote>
 <div id="admonition-info" class="admonition info">
 <div class="admonition-title">
 <p>Info</p>
@@ -267,7 +254,16 @@ int main(){
 <p>Do you have any notes.(give 4 space above to show the line in the next line)<br />
 This can be collapsed.(give 4 space above to show the line in the next line)</p>
 </div>
-</details><div style="break-before: page; page-break-before: always;"></div><h2 id="python-is-a-good-programming-language"><a class="header" href="#python-is-a-good-programming-language">Python is a good programming language</a></h2>
+</details>
+<div id="admonition-info-1" class="admonition info">
+<div class="admonition-title">
+<p>Info</p>
+<p><a class="admonition-anchor-link" href="cpp.html#admonition-info-1"></a></p>
+</div>
+<div>
+<p>Cpp is awesome!</p>
+</div>
+</div><div style="break-before: page; page-break-before: always;"></div><h2 id="python-is-a-good-programming-language"><a class="header" href="#python-is-a-good-programming-language">Python is a good programming language</a></h2>
 <h3 id="code--hello-world"><a class="header" href="#code--hello-world">Code : Hello world</a></h3>
 <div id="admonition-info" class="admonition info">
 <div class="admonition-title">
@@ -373,6 +369,22 @@ This can be collapsed.(give 4 space above to show the line in the next line)</p>
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
