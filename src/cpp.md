@@ -1,6 +1,9 @@
 ## This is just about hello world in CPP
 Using this I just want to check if the code highlight is there or not
 
+```admonish info
+A beautifully styled message.
+```
 ## code
 ```cpp
 #include<iostream>
