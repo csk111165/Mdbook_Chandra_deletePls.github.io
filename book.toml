@@ -15,6 +15,6 @@ assets_version = "2.0.2" # do not edit: managed by `mdbook-admonish install`
 [output]
 
 [output.html]
-additional-css = ["./asset/css/mdbook-admonish.css", "./mdbook-admonish.css"]
+additional-css = ["./mdbook-admonish.css"]
 
 
