@@ -1,5 +1,12 @@
 ## This is just about hello world in CPP
 Using this I just want to check if the code highlight is there or not
+![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+
+> **Note**
+> This is a note
+
+
+
 
 ```admonish info
 Cpp is awesome!
