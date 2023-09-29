@@ -15,7 +15,6 @@ Using this I just want to check if the code highlight is there or not
 Cpp is awesome!
 ```
 
-
 ## Code
 ~~~admonish title="C++ Hello world code" collapsible=true
 ```cpp
@@ -100,6 +99,14 @@ Cpp is awesome! , this is with title, for that we need to use title="some title"
 Cpp is awesome! , this is with title, for that we need to use title="some title"
 ```
 
+
+
+### Adding tables
+| Month    | Savings |
+| -------- | ------- |
+| January  | $250    |
+| February | $80     |
+| March    | $420    |
 
 
 
