@@ -9,7 +9,7 @@ Cpp is awesome!
 ```
 
 ## Code
-
+~~~admonish title="C++ Hello world code" collapsible=true
 ```cpp
 
 #include<iostream>
@@ -21,6 +21,7 @@ int main(){
     return 0;
 }
 ```
+~~~
 
 ## Add two number
 
