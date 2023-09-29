@@ -33,9 +33,64 @@ int main(int a, int b) {
 
 ```admonish  note collapsible=true
 Do you have any notes.(give 4 space above to show the line in the next line)        
-This can be collapsed.(give 4 space above to show the line in the next line)
+This can be collapsed, use `collapasable=true`
 ```
 
 ```admonish info
 Cpp is awesome!
 ```
+
+```admonish danger 
+Cpp is awesome!
+```
+
+
+
+```admonish warning title=""
+Cpp is awesome! , this is without title, for that we need to use title=""
+```
+
+
+```admonish success title="This is admonish success with title"
+Cpp is awesome! , this is with title, for that we need to use title="some title"
+```
+
+
+~~~admonish bug title="This is a bug"
+A code segmenent can also be made as a part of admonish block , but in that case the `admonish block` should be enclosed with `~~~` and code with ```
+```cpp
+#include<iostream>
+int main() {
+    return null;
+
+}
+```
+~~~
+
+```admonish tip title="This is admonish tip"
+Cpp is awesome! , this is with title, for that we need to use title="some title"
+```
+
+```admonish example title="This is admonish example"
+Cpp is awesome! , this is with title, for that we need to use title="some title"
+```
+
+```admonish question title="This is admonish question"
+Cpp is awesome! , this is with title, for that we need to use title="some title"
+```
+
+```admonish failure title="This is admonish failure"
+Cpp is awesome! , this is with title, for that we need to use title="some title"
+```
+
+```admonish quote title="This is admonish quote"
+Cpp is awesome! , this is with title, for that we need to use title="some title"
+```
+
+```admonish abstract title="This is admonish abstract"
+Cpp is awesome! , this is with title, for that we need to use title="some title"
+```
+
+
+
+
