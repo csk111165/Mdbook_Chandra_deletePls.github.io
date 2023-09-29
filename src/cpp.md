@@ -21,6 +21,7 @@ int main(){
 ### Add two number
 ```cpp
 int main(int a, int b) {
+    // adds and returns the result
     return a + b;
 }
 

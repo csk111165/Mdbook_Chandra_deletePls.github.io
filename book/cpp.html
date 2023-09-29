@@ -192,6 +192,7 @@ int main(){
 ### Add two number
 ```cpp
 int main(int a, int b) {
+    // adds and returns the result
     return a + b;
 }
 
@@ -229,22 +230,6 @@ This can be collapsed.(give 4 space above to show the line in the next line)
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
