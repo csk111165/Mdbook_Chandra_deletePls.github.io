@@ -24,6 +24,7 @@ int main(int a, int b) {
     // adds and returns the result
     return a + b;
 }
+```
 
 ```admonish  note collapsible=true
 Do you have any notes.(give 4 space above to show the line in the next line)        

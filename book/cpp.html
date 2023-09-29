@@ -195,12 +195,17 @@ int main(int a, int b) {
     // adds and returns the result
     return a + b;
 }
-
-```admonish  note collapsible=true
-Do you have any notes.(give 4 space above to show the line in the next line)        
-This can be collapsed.(give 4 space above to show the line in the next line)
 </code></pre>
-
+<details id="admonition-note" class="admonition note">
+<summary class="admonition-title">
+<p>Note</p>
+<p><a class="admonition-anchor-link" href="#admonition-note"></a></p>
+</summary>
+<div>
+<p>Do you have any notes.(give 4 space above to show the line in the next line)<br />
+This can be collapsed.(give 4 space above to show the line in the next line)</p>
+</div>
+</details>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
@@ -230,6 +235,22 @@ This can be collapsed.(give 4 space above to show the line in the next line)
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
