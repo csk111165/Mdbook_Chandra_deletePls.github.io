@@ -17,8 +17,10 @@ int main(){
     cout<<"This is getting some update";
     return 0;
 }
+```
 
-### Add two number
+## Add two number
+
 ```cpp
 int main(int a, int b) {
     // adds and returns the result
