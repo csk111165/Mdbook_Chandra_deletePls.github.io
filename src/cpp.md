@@ -2,10 +2,12 @@
 Using this I just want to check if the code highlight is there or not
 
 ```admonish info
-A beautifully styled message.
+Cpp is awesome!
 ```
-## code
+
+## Code
 ```cpp
+
 #include<iostream>
 using namespace std;
 
@@ -15,4 +17,10 @@ int main(){
     return 0;
 }
 
+```
+
+
+```admonish  note collapsible=true
+Do you have any notes.(give 4 space above to show the line in the next line)        
+This can be collapsed.(give 4 space above to show the line in the next line)
 ```
