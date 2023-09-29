@@ -18,8 +18,11 @@ int main(){
     return 0;
 }
 
-```
-
+### Add two number
+```cpp
+int main(int a, int b) {
+    return a + b;
+}
 
 ```admonish  note collapsible=true
 Do you have any notes.(give 4 space above to show the line in the next line)        
