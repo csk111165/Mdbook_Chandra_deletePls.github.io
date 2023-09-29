@@ -2,11 +2,19 @@
 Using this I just want to check if the code highlight is there or not
 ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 
+## Adding an image without using height and width
+
+![Cpp](../images/cpp.png)
+
+## Adding image using img tag with width and height
+
+<img src="../images/cpp.png" alt="some randome name" width="250" height="250"/>
 
 
 ```admonish info
 Cpp is awesome!
 ```
+
 
 ## Code
 ~~~admonish title="C++ Hello world code" collapsible=true
