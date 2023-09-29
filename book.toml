@@ -6,9 +6,16 @@ src = "src"
 
 [preprocessor.admonish]
 on_failure = "bail"
+command = "mdbook-admonish"
+assets_version = "2.0.2" # do not edit: managed by `mdbook-admonish install`
 
 [preprocessor.admonish.default]
 collapsible = true
 
 [preprocessor.admonish.renderer.test]
 render_mode = "strip"
+
+[output]
+
+[output.html]
+additional-css = ["./assets/css/mdbook-admonish.css"]
