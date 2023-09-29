@@ -8,24 +8,24 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # To push a branch 
+      contents: write  # To push a branch
       pull-requests: write  # To create a PR from that branch
     steps:
     - uses: actions/checkout@v3
       with:
         fetch-depth: 0
-    - name: Install latest mdbook
+    - name: Install Rust and Dependencies
       run: |
-        tag=$(curl 'https://api.github.com/repos/rust-lang/mdbook/releases/latest' | jq -r '.tag_name')
-        url="https://github.com/rust-lang/mdbook/releases/download/${tag}/mdbook-${tag}-x86_64-unknown-linux-gnu.tar.gz"
-        mkdir mdbook
-        curl -sSL $url | tar -xz --directory=./mdbook
-        echo `pwd`/mdbook >> $GITHUB_PATH
+        sudo apt-get install -y curl jq
+        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+        source $HOME/.cargo/env
+        cargo install mdbook
+        cargo install mdbook-admonish  # Install mdbook-admonish
     - name: Deploy GitHub Pages
       run: |
         # This assumes your book is in the root of your repository.
         # Just add a `cd` here if you need to change to another directory.
-        mdbook build
+        mdbook build --theme admonitions  # Use the 'admonitions' theme
         git worktree add gh-pages
         git config user.name "Deploy from CI"
         git config user.email ""
