@@ -3,3 +3,12 @@ authors = []
 language = "en"
 multilingual = false
 src = "src"
+
+[preprocessor.admonish]
+on_failure = "bail"
+
+[preprocessor.admonish.default]
+collapsible = true
+
+[preprocessor.admonish.renderer.test]
+render_mode = "strip"
