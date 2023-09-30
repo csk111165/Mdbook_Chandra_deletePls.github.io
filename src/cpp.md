@@ -54,10 +54,6 @@ Cpp is awesome!
 
 
 
-```admonish warning title=""
-Cpp is awesome! , this is without title, for that we need to use title=""
-```
-
 
 ```admonish success title="This is admonish success with title"
 Cpp is awesome! , this is with title, for that we need to use title="some title"
@@ -101,6 +97,10 @@ Cpp is awesome! , this is with title, for that we need to use title="some title"
 
 ```admonish success title=""
 Success without title
+```
+
+```admonish warning title=""
+Cpp is awesome! , this is without title, for that we need to use title=""
 ```
 
 ### Adding tables
