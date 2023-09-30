@@ -99,7 +99,9 @@ Cpp is awesome! , this is with title, for that we need to use title="some title"
 Cpp is awesome! , this is with title, for that we need to use title="some title"
 ```
 
-
+```admonish success title=""
+Success without title
+```
 
 ### Adding tables
 | Month    | Savings |
