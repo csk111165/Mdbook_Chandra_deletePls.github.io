@@ -10,6 +10,9 @@ Using this I just want to check if the code highlight is there or not
 
 <img src="../images/cpp.png" alt="some randome name" width="250" height="250"/>
 
+## Center align image
+
+<p align="center"><img src="../images/cpp.png" alt="some randome name" width="250" height="250"></p>
 
 ```admonish info
 Cpp is awesome!
@@ -99,9 +102,6 @@ Cpp is awesome! , this is with title, for that we need to use title="some title"
 Success without title
 ```
 
-```admonish warning title=""
-Cpp is awesome! , this is without title, for that we need to use title=""
-```
 
 ### Adding tables
 | Month    | Savings |

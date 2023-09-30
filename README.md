@@ -6,9 +6,9 @@ Mdbook-configuration
 ## How to deploy Mdbook 
 Follow this link : https://github.com/rust-lang/mdBook/wiki/Automated-Deployment%3A-GitHub-Actions and see the section `GitHub Pages Deploy`
 
-#### ~~Make sure if you are making any changes or adding new chapter to use `mdbook build` command to updated the `book` folder and then push the chahges~~
+ ~~Make sure if you are making any changes or adding new chapter to use `mdbook build` command to updated the `book` folder and then push the chahges~~
 
-#### Sinc github action is set in .github/workflow, if you see the command section, it will automatically build the book, we don't have to use the `mdbook build ` command to build the book explicitely
+Since github action is set in .github/workflow, if you see the command section, it will automatically build the book, we don't have to use the `mdbook build ` command to build the book explicitely
 
 
 ## Adding mdbook-admonish formating style
