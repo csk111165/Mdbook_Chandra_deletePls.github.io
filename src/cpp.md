@@ -102,6 +102,18 @@ Cpp is awesome! , this is with title, for that we need to use title="some title"
 Success without title
 ```
 
+## Adding code from a source code file
+````admonish success title="This code is coming from cpp_code/welcome.cpp file"
+```cpp
+{{#include ./cpp_code/welcome.cpp}}
+```
+````
+
+```admonish tip 
+For nesting code with admonish we can use ````(4) instead of ```(3), as done in the above example
+```
+
+
 
 ### Adding tables
 | Month    | Savings |
