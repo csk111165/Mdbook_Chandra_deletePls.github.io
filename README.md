@@ -34,5 +34,11 @@ mdbook-admonish install --css-dir . {directory where book.toml file is present, 
     additional-css = ["./mdbook-admonish.css"]
 
 ```
+### Note
+
+If the admonish version is upgraded we need to update the same or else, it will show build error, we need to install the upgraded version and use the below command 
+
+- `cargo install mdbook-admonish`
+- `mdbook-admonish install` :  let mdbook-admonish add the required files and configuration:
 
 
