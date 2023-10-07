@@ -105,6 +105,7 @@ Success without title
 ## Adding code from a source code file
 ````admonish success title="This code is coming from cpp_code/welcome.cpp file"
 ```cpp
+
 {{#include ./cpp_code/welcome.cpp}}
 ```
 ````

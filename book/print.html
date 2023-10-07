@@ -85,7 +85,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="chapter_1.html"><strong aria-hidden="true">1.</strong> CPP</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="cpp.html"><strong aria-hidden="true">1.1.</strong> Introduction to CPP</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="cpp.html"><strong aria-hidden="true">1.1.1.</strong> Hello world!</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="python.html"><strong aria-hidden="true">2.</strong> Python</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="python.html"><strong aria-hidden="true">2.1.</strong> Introduction to Python</a></li><li class="chapter-item expanded "><a href="python.html"><strong aria-hidden="true">2.2.</strong> Intermediate Python</a></li><li class="chapter-item expanded "><a href="python.html"><strong aria-hidden="true">2.3.</strong> Advance Python</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="chapter_1.html"><strong aria-hidden="true">1.</strong> CPP</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="cpp.html"><strong aria-hidden="true">1.1.</strong> Introduction to CPP</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="cpp.html"><strong aria-hidden="true">1.1.1.</strong> Hello world!</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="python.html"><strong aria-hidden="true">2.</strong> Python</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="python.html"><strong aria-hidden="true">2.1.</strong> Introduction to Python</a></li><li class="chapter-item expanded "><a href="python.html"><strong aria-hidden="true">2.2.</strong> Intermediate Python</a></li><li class="chapter-item expanded "><a href="python.html"><strong aria-hidden="true">2.3.</strong> Advance Python</a></li></ol></li><li class="chapter-item expanded "><a href="md_files/learn_cpp/index.html"><strong aria-hidden="true">3.</strong> Learn Cpp</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="md_files/learn_cpp/one.html"><strong aria-hidden="true">3.1.</strong> Statements and the structure of a program</a></li><li class="chapter-item expanded "><a href="md_files/learn_cpp/comments.html"><strong aria-hidden="true">3.2.</strong> Comments</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.3.</strong> External-md-file</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="md_files/learn_cpp/dummy.html"><strong aria-hidden="true">3.3.1.</strong> dummy</a></li></ol></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -330,7 +330,8 @@ int main() {
 <p><a class="admonition-anchor-link" href="cpp.html#admonition-this-code-is-coming-from-cpp_codewelcomecpp-file"></a></p>
 </div>
 <div>
-<pre><code class="language-cpp">#include&lt;iostream&gt;
+<pre><code class="language-cpp">
+#include&lt;iostream&gt;
 using namespace std; 
 
 int main() {
@@ -516,7 +517,8 @@ int main() {
 <p><a class="admonition-anchor-link" href="cpp.html#admonition-this-code-is-coming-from-cpp_codewelcomecpp-file"></a></p>
 </div>
 <div>
-<pre><code class="language-cpp">#include&lt;iostream&gt;
+<pre><code class="language-cpp">
+#include&lt;iostream&gt;
 using namespace std; 
 
 int main() {
@@ -543,15 +545,6 @@ int main() {
 </tbody></table>
 </div><div style="break-before: page; page-break-before: always;"></div><h2 id="python-is-a-good-programming-language"><a class="header" href="#python-is-a-good-programming-language">Python is a good programming language</a></h2>
 <h3 id="code--hello-world"><a class="header" href="#code--hello-world">Code : Hello world</a></h3>
-<div id="admonition-info" class="admonition info">
-<div class="admonition-title">
-<p>Info</p>
-<p><a class="admonition-anchor-link" href="python.html#admonition-info"></a></p>
-</div>
-<div>
-<p>A beautifully styled message.</p>
-</div>
-</div>
 <div id="admonition-example" class="admonition example">
 <div class="admonition-title">
 <p>Example</p>
@@ -563,17 +556,37 @@ int main() {
 </div>
 <pre><code class="language-py">print(&quot;hello world&quot;)
 </code></pre>
-<div style="break-before: page; page-break-before: always;"></div><h2 id="python-is-a-good-programming-language-1"><a class="header" href="#python-is-a-good-programming-language-1">Python is a good programming language</a></h2>
+<h3 id="embbeding-the-code-using-include-tag-and-from-a-source-file"><a class="header" href="#embbeding-the-code-using-include-tag-and-from-a-source-file">Embbeding the code using include tag and from a source file</a></h3>
+<pre><code class="language-python"># This is hello world program in python
+
+print(&quot;Hello world&quot;)
+</code></pre>
+<h3 id="embbeding-the-code-using-include-tag-and-from-a-source-file-and-wrapping-it-with-admonish-success"><a class="header" href="#embbeding-the-code-using-include-tag-and-from-a-source-file-and-wrapping-it-with-admonish-success">Embbeding the code using include tag and from a source file and wrapping it with admonish success</a></h3>
+<div id="admonition-python-class-demo" class="admonition question">
+<div class="admonition-title">
+<p>Python class demo</p>
+<p><a class="admonition-anchor-link" href="python.html#admonition-python-class-demo"></a></p>
+</div>
+<div>
+<pre><code class="language-python"># This is class demo code
+
+class Base():
+    # constructor
+    def __init__(self, name):
+        self.name = name
+    
+    # print function
+    def printMe(self):
+        print(f&quot;Just normal printing {self.name}&quot;)
+
+
+# create an object of Base class
+obj = Base(&quot;chandra&quot;)
+obj.printMe()
+</code></pre>
+</div>
+</div><div style="break-before: page; page-break-before: always;"></div><h2 id="python-is-a-good-programming-language-1"><a class="header" href="#python-is-a-good-programming-language-1">Python is a good programming language</a></h2>
 <h3 id="code--hello-world-1"><a class="header" href="#code--hello-world-1">Code : Hello world</a></h3>
-<div id="admonition-info" class="admonition info">
-<div class="admonition-title">
-<p>Info</p>
-<p><a class="admonition-anchor-link" href="python.html#admonition-info"></a></p>
-</div>
-<div>
-<p>A beautifully styled message.</p>
-</div>
-</div>
 <div id="admonition-example" class="admonition example">
 <div class="admonition-title">
 <p>Example</p>
@@ -585,17 +598,37 @@ int main() {
 </div>
 <pre><code class="language-py">print(&quot;hello world&quot;)
 </code></pre>
-<div style="break-before: page; page-break-before: always;"></div><h2 id="python-is-a-good-programming-language-2"><a class="header" href="#python-is-a-good-programming-language-2">Python is a good programming language</a></h2>
+<h3 id="embbeding-the-code-using-include-tag-and-from-a-source-file-1"><a class="header" href="#embbeding-the-code-using-include-tag-and-from-a-source-file-1">Embbeding the code using include tag and from a source file</a></h3>
+<pre><code class="language-python"># This is hello world program in python
+
+print(&quot;Hello world&quot;)
+</code></pre>
+<h3 id="embbeding-the-code-using-include-tag-and-from-a-source-file-and-wrapping-it-with-admonish-success-1"><a class="header" href="#embbeding-the-code-using-include-tag-and-from-a-source-file-and-wrapping-it-with-admonish-success-1">Embbeding the code using include tag and from a source file and wrapping it with admonish success</a></h3>
+<div id="admonition-python-class-demo" class="admonition question">
+<div class="admonition-title">
+<p>Python class demo</p>
+<p><a class="admonition-anchor-link" href="python.html#admonition-python-class-demo"></a></p>
+</div>
+<div>
+<pre><code class="language-python"># This is class demo code
+
+class Base():
+    # constructor
+    def __init__(self, name):
+        self.name = name
+    
+    # print function
+    def printMe(self):
+        print(f&quot;Just normal printing {self.name}&quot;)
+
+
+# create an object of Base class
+obj = Base(&quot;chandra&quot;)
+obj.printMe()
+</code></pre>
+</div>
+</div><div style="break-before: page; page-break-before: always;"></div><h2 id="python-is-a-good-programming-language-2"><a class="header" href="#python-is-a-good-programming-language-2">Python is a good programming language</a></h2>
 <h3 id="code--hello-world-2"><a class="header" href="#code--hello-world-2">Code : Hello world</a></h3>
-<div id="admonition-info" class="admonition info">
-<div class="admonition-title">
-<p>Info</p>
-<p><a class="admonition-anchor-link" href="python.html#admonition-info"></a></p>
-</div>
-<div>
-<p>A beautifully styled message.</p>
-</div>
-</div>
 <div id="admonition-example" class="admonition example">
 <div class="admonition-title">
 <p>Example</p>
@@ -607,17 +640,37 @@ int main() {
 </div>
 <pre><code class="language-py">print(&quot;hello world&quot;)
 </code></pre>
-<div style="break-before: page; page-break-before: always;"></div><h2 id="python-is-a-good-programming-language-3"><a class="header" href="#python-is-a-good-programming-language-3">Python is a good programming language</a></h2>
+<h3 id="embbeding-the-code-using-include-tag-and-from-a-source-file-2"><a class="header" href="#embbeding-the-code-using-include-tag-and-from-a-source-file-2">Embbeding the code using include tag and from a source file</a></h3>
+<pre><code class="language-python"># This is hello world program in python
+
+print(&quot;Hello world&quot;)
+</code></pre>
+<h3 id="embbeding-the-code-using-include-tag-and-from-a-source-file-and-wrapping-it-with-admonish-success-2"><a class="header" href="#embbeding-the-code-using-include-tag-and-from-a-source-file-and-wrapping-it-with-admonish-success-2">Embbeding the code using include tag and from a source file and wrapping it with admonish success</a></h3>
+<div id="admonition-python-class-demo" class="admonition question">
+<div class="admonition-title">
+<p>Python class demo</p>
+<p><a class="admonition-anchor-link" href="python.html#admonition-python-class-demo"></a></p>
+</div>
+<div>
+<pre><code class="language-python"># This is class demo code
+
+class Base():
+    # constructor
+    def __init__(self, name):
+        self.name = name
+    
+    # print function
+    def printMe(self):
+        print(f&quot;Just normal printing {self.name}&quot;)
+
+
+# create an object of Base class
+obj = Base(&quot;chandra&quot;)
+obj.printMe()
+</code></pre>
+</div>
+</div><div style="break-before: page; page-break-before: always;"></div><h2 id="python-is-a-good-programming-language-3"><a class="header" href="#python-is-a-good-programming-language-3">Python is a good programming language</a></h2>
 <h3 id="code--hello-world-3"><a class="header" href="#code--hello-world-3">Code : Hello world</a></h3>
-<div id="admonition-info" class="admonition info">
-<div class="admonition-title">
-<p>Info</p>
-<p><a class="admonition-anchor-link" href="python.html#admonition-info"></a></p>
-</div>
-<div>
-<p>A beautifully styled message.</p>
-</div>
-</div>
 <div id="admonition-example" class="admonition example">
 <div class="admonition-title">
 <p>Example</p>
@@ -629,6 +682,77 @@ int main() {
 </div>
 <pre><code class="language-py">print(&quot;hello world&quot;)
 </code></pre>
+<h3 id="embbeding-the-code-using-include-tag-and-from-a-source-file-3"><a class="header" href="#embbeding-the-code-using-include-tag-and-from-a-source-file-3">Embbeding the code using include tag and from a source file</a></h3>
+<pre><code class="language-python"># This is hello world program in python
+
+print(&quot;Hello world&quot;)
+</code></pre>
+<h3 id="embbeding-the-code-using-include-tag-and-from-a-source-file-and-wrapping-it-with-admonish-success-3"><a class="header" href="#embbeding-the-code-using-include-tag-and-from-a-source-file-and-wrapping-it-with-admonish-success-3">Embbeding the code using include tag and from a source file and wrapping it with admonish success</a></h3>
+<div id="admonition-python-class-demo" class="admonition question">
+<div class="admonition-title">
+<p>Python class demo</p>
+<p><a class="admonition-anchor-link" href="python.html#admonition-python-class-demo"></a></p>
+</div>
+<div>
+<pre><code class="language-python"># This is class demo code
+
+class Base():
+    # constructor
+    def __init__(self, name):
+        self.name = name
+    
+    # print function
+    def printMe(self):
+        print(f&quot;Just normal printing {self.name}&quot;)
+
+
+# create an object of Base class
+obj = Base(&quot;chandra&quot;)
+obj.printMe()
+</code></pre>
+</div>
+</div><div style="break-before: page; page-break-before: always;"></div><h2 id="c-basics"><a class="header" href="#c-basics">C++ Basics</a></h2>
+<div id="admonition-topics" class="admonition example">
+<div class="admonition-title">
+<p>Topics</p>
+<p><a class="admonition-anchor-link" href="md_files/learn_cpp/index.html#admonition-topics"></a></p>
+</div>
+<div>
+<ul>
+<li><a href="md_files/learn_cpp/./one.html">Statements and the structure of a program</a></li>
+<li><a href="md_files/learn_cpp/./comments.html">Comments</a></li>
+<li>Introduction to objects and variables</li>
+<li>Variable assignment and initialization</li>
+<li>Introduction to iostream: cout, cin, and endl</li>
+<li>Uninitialized variables and undefined behavior</li>
+<li>Keywords and naming identifiers</li>
+<li>Whitespace and basic formatting</li>
+<li>Introduction to literals and operators</li>
+<li>Introduction to expressions</li>
+<li>Developing your first program</li>
+<li>Chapter 1 summary and quiz</li>
+</ul>
+</div>
+</div>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="11--statements-and-the-structure-of-a-program"><a class="header" href="#11--statements-and-the-structure-of-a-program">1.1 — Statements and the structure of a program</a></h2>
+<p><strong>Chapter introduction</strong></p>
+<p>Welcome to the first primary chapter of these C++ tutorials! <a href="md_files/learn_cpp/./dummy.html">Dummy md file</a></p>
+<p>In this chapter, we’ll take a first look at a number of topics that are essential to every C++ program. Because there are quite a few topics to cover, we’ll cover most at a fairly shallow level (just enough to get by). The goal of this chapter is to help you understand how basic C++ programs are constructed. By the end of the chapter, you will be able to write your own simple programs.</p>
+<p>In future chapters, we’ll revisit the majority of these topics and explore them in more detail. We’ll also introduce new concepts that build on top of these.</p>
+<p>In order to keep the lesson lengths manageable, topics may be split over several subsequent lessons. If you feel like some important concept isn’t covered in a lesson, it’s possible that it’s covered in the next lesson.</p>
+<p><strong>Statements</strong></p>
+<p>A computer program is a sequence of instructions that tell the computer what to do. A statement is a type of instruction that causes the program to perform some action.</p>
+<p>Statements are by far the most common type of instruction in a C++ program. This is because they are the smallest independent unit of computation in the C++ language. In that regard, they act much like sentences do in natural language. When we want to convey an idea to another person, we typically write or speak in sentences (not in random words or syllables). In C++, when we want to have our program do something, we typically write statements.</p>
+<p>Most (but not all) statements in C++ end in a semicolon. If you see a line that ends in a semicolon, it’s probably a statement.</p>
+<p>In a high-level language such as C++, a single statement may compile into many machine language instructions.</p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="12--comments"><a class="header" href="#12--comments">1.2 — Comments</a></h2>
+<p><strong>ALEX</strong><br />
+<strong>SEPTEMBER 8, 2023</strong></p>
+<p>A comment is a programmer-readable note that is inserted directly into the source code of the program. Comments are ignored by the compiler and are for the programmer’s use only.</p>
+<p>In C++ there are two different styles of comments, both of which serve the same purpose: to help programmers document the code in some way.</p>
+<p><strong>Single-line comments</strong></p>
+<p>The <code>//</code> symbol begins a C++ single-line comment, which tells the compiler to ignore everything from the <code>//</code> symbol to the end of the line. For example:</p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="this-is-just-a-dummy-md-file"><a class="header" href="#this-is-just-a-dummy-md-file">This is just a dummy md file</a></h2>
 
                     </main>
 
